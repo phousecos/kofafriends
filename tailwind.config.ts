@@ -5,13 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "kofa-green": "#1F6F4A",
-        "kofa-green-deep": "#15533A",
+        "kofa-green": "#437731",
+        "kofa-green-deep": "#33591F",
         "kofa-gold": "#D4A24C",
         "kofa-ink": "#0E1110",
-        "kofa-warm": "#F4EFE6",
+        "kofa-warm": "#FFFFFF",
         "kofa-stone": "#3F3A33",
-        "kofa-mist": "#EAE3D6",
+        "kofa-mist": "#FFFFFF",
       },
       fontFamily: {
         display: ["var(--font-source-serif)", "Georgia", "serif"],
