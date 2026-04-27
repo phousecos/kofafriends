@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 // SWAP THIS URL once GiveButter campaign is live
@@ -9,17 +10,21 @@ export default function HomePage() {
       {/* ───────────── NAV ───────────── */}
       <nav className="absolute top-0 left-0 right-0 z-20 px-6 md:px-12 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-kofa-green flex items-center justify-center">
-            <svg viewBox="0 0 24 24" className="w-5 h-5 text-white" fill="currentColor" aria-hidden>
-              {/* simplified Africa silhouette */}
-              <path d="M14.2 2.8c-.6-.4-1.4-.5-2.1-.3l-3 .9c-.7.2-1.3.7-1.6 1.4L6 8.5c-.3.6-.3 1.4 0 2l1.2 2.4c.2.4.5.7.9.9l1.5.7v3.2c0 .5.2 1 .6 1.4l1.7 1.6c.4.4 1 .6 1.5.5l2.4-.4c.7-.1 1.3-.6 1.6-1.2l1.7-3.6c.2-.5.3-1 .1-1.5l-.6-2c-.1-.4-.4-.8-.7-1l-1.4-1c-.3-.2-.5-.5-.6-.9l-.5-1.8c-.1-.5-.4-.9-.8-1.2l-1-.6z" />
-            </svg>
+          <div className="bg-white rounded-full p-1.5 shadow-sm flex items-center justify-center">
+            <Image
+              src="/logo.png"
+              alt="KOFA Africa"
+              width={36}
+              height={36}
+              className="h-9 w-9 object-contain"
+              priority
+            />
           </div>
           <div className="leading-tight">
-            <div className="font-display text-[15px] font-semibold tracking-tight text-kofa-ink">
+            <div className="font-display text-[15px] font-semibold tracking-tight text-white">
               Friends of KOFA
             </div>
-            <div className="text-[11px] uppercase tracking-[0.18em] text-kofa-stone/60">
+            <div className="text-[11px] uppercase tracking-[0.18em] text-white/70">
               Africa
             </div>
           </div>
@@ -29,7 +34,7 @@ export default function HomePage() {
           href={DONATE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-kofa-ink hover:text-kofa-green transition-colors"
+          className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-white hover:text-kofa-gold transition-colors"
         >
           Donate
           <span aria-hidden>→</span>
@@ -71,7 +76,7 @@ export default function HomePage() {
             </h1>
 
             <p className="fade-up fade-up-delay-3 max-w-2xl text-lg md:text-xl text-white/85 leading-relaxed font-light">
-              Friends of KOFA, Africa raises tax-deductible funds in the United States
+              Friends of KOFA Africa raises tax-deductible funds in the United States
               to advance community health, maternal care, and clean water across the
               African continent — supporting the work of KOFA Africa.
             </p>
@@ -317,11 +322,13 @@ export default function HomePage() {
           <div className="grid md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-5">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-full bg-kofa-green flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-4 h-4 text-white" fill="currentColor" aria-hidden>
-                    <path d="M14.2 2.8c-.6-.4-1.4-.5-2.1-.3l-3 .9c-.7.2-1.3.7-1.6 1.4L6 8.5c-.3.6-.3 1.4 0 2l1.2 2.4c.2.4.5.7.9.9l1.5.7v3.2c0 .5.2 1 .6 1.4l1.7 1.6c.4.4 1 .6 1.5.5l2.4-.4c.7-.1 1.3-.6 1.6-1.2l1.7-3.6c.2-.5.3-1 .1-1.5l-.6-2c-.1-.4-.4-.8-.7-1l-1.4-1c-.3-.2-.5-.5-.6-.9l-.5-1.8c-.1-.5-.4-.9-.8-1.2l-1-.6z" />
-                  </svg>
-                </div>
+                <Image
+                  src="/logo.png"
+                  alt="KOFA Africa"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8 object-contain"
+                />
                 <div className="font-display font-semibold text-kofa-ink">
                   Friends of KOFA, Africa
                 </div>

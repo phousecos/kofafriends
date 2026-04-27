@@ -58,9 +58,25 @@ Right now the page shows "501(c)(3) **pending**" and "EIN forthcoming." Once the
 - In the **Donate section disclosure**: remove "*(status pending)*" and add the EIN
 - In the **Footer Legal block**: replace the "in process" language with the EIN and determination date
 
-### 4. The Africa silhouette icon
+### 4. The KOFA logo
 
-The nav and footer use a simplified inline SVG of Africa. If KOFA shares their actual logo file, drop it into `/public/logo.svg` and replace the inline SVGs with `<Image src="/logo.svg" ... />`.
+The nav and footer reference `/public/logo.png` via `next/image`. Drop the
+official KOFA logo file at `public/logo.png` (or replace with `.svg` and
+update the two `<Image src="/logo.png" ... />` references in `app/page.tsx`).
+On the dark hero, the nav wraps the logo in a small white chip so the green
+mark reads cleanly; the footer renders it directly on the white background.
+
+### 5. Brand colors
+
+The official palette lives in `tailwind.config.ts`:
+
+- `kofa-green` `#437731` — primary brand green
+- `kofa-green-deep` `#33591F` — derived hover/pressed state
+- `kofa-warm` / `kofa-mist` `#FFFFFF` — Fundamental White (page + footer bg)
+- `kofa-gold` `#D4A24C` — Friends-of accent (not in KOFA Africa's palette;
+  intentionally added to differentiate the U.S. fundraising sister site)
+- `kofa-ink` `#0E1110` — near-black headlines/body
+- `kofa-stone` `#3F3A33` — muted body text
 
 ---
 
