@@ -71,7 +71,7 @@ export default function HomePage() {
             </h1>
 
             <p className="fade-up fade-up-delay-3 max-w-2xl text-lg md:text-xl text-white/85 leading-relaxed font-light">
-              Friends of KOFA, Africa raises tax-deductible funds in the United States
+              Friends of KOFA Africa raises tax-deductible funds in the United States
               to advance community health, maternal care, and clean water across the
               African continent — supporting the work of KOFA Africa.
             </p>
